@@ -23,7 +23,7 @@
                     'theme_location' => 'primary',
                     'container' => false,
                     'menu_class' => 'navbar-nav elegant-nav',
-                    'fallback_cb' => '__return_false',
+                    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
                     'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
                     'depth' => 2,
                     'walker' => new WP_Bootstrap_Navwalker()
